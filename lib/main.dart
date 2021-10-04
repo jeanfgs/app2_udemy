@@ -19,13 +19,16 @@ void main() {
                 Text("Texto 1"),
                 Text("Texto 2"),
                 Text("Texto 3"),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Text("Em linha 1"),
-                    Text("Em linha 2"),
-                    Text("Em linha 3"),
-                  ],
+                Padding(
+                  padding: const EdgeInsets.all(20),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text("Em linha 1"),
+                      Text("Em linha 2"),
+                      Text("Em linha 3"),
+                    ],
+                  ),
                 )
               ],
             ),
